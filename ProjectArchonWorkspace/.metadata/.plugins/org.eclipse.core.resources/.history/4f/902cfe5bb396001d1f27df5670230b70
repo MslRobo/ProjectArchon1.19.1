@@ -1,0 +1,10 @@
+package com.mslrobo.projectarchon;
+
+import net.minecraftforge.fml.common.Mod;
+
+@Mod("projectarchon")
+public class ProjectArchon {
+	public ProjectArchon() {
+		MinecraftForge.EVENT_BUS.register(this);
+	}
+}

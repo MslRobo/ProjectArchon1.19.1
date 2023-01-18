@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"": {
+			"model": "projectarchon:block/example_block"
+		}
+	}
+}

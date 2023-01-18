@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[42,)"
+license="All rights reserved"
+[[mods]] 
+modId="projectarchon"
+version="${file.jarVersion}"
+displayName="Project Archon"
+logoFile="examplemod.png" #optional
+credits="Project Archon developed by MslRobo" #optional
+authors="MslRobo"
+#displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified (#optional)
+
+description='''
+This is the description of Project Archon
+'''
+
+[[dependencies.projectarchon]]
+    modId="forge"
+    mandatory=true
+    versionRange="[42,)"
+    ordering="NONE"
+    side="BOTH"
+    
+[[dependencies.projectarchon]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.1,1.20)"
+    ordering="NONE"
+    side="BOTH"

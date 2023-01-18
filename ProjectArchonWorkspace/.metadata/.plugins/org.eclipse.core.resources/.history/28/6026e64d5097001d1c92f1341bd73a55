@@ -1,0 +1,7 @@
+{
+	"replace": false,
+	"values": [
+		"projectarchon:block/example_block",
+		"minecraft:block/diamond_ore"
+	]
+}

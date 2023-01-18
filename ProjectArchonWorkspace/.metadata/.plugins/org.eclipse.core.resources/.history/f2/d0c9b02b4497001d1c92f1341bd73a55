@@ -1,0 +1,36 @@
+{
+	"variants": {
+		"facing=north,lit=true": {
+			"model": "projectarchon:block/rotatable_block",
+			"y": 90
+		},
+		"facing=east,lit=true": {
+			"model": "projectarchon:block/rotatable_block",
+			"y": 180
+		},
+		"facing=south,lit=true": {
+			"model": "projectarchon:block/rotatable_block",
+			"y": 270
+		},
+		"facing=west,lit=true": {
+			"model": "projectarchon:block/rotatable_block",
+			"y": 360
+		},
+		"facing=north,lit=false": {
+			"model": "projectarchon:block/rotatable_block",
+			"y": 90
+		},
+		"facing=east,lit=false": {
+			"model": "projectarchon:block/rotatable_block",
+			"y": 180
+		},
+		"facing=south,lit=false": {
+			"model": "projectarchon:block/rotatable_block",
+			"y": 270
+		},
+		"facing=west,lit=false": {
+			"model": "projectarchon:block/rotatable_block",
+			"y": 360
+		}
+	}
+}

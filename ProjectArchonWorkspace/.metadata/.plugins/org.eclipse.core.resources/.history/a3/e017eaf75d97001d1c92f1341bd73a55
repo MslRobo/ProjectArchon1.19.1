@@ -1,0 +1,5 @@
+package com.mslrobo.projectarchon.datagen.client;
+
+public class ModItemModelProvider {
+
+}

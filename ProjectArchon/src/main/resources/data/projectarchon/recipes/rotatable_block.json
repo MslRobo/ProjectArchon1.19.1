@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "projectarchon:example_block"
+	},
+	"result": "projectarchon:rotatable_block",
+	"experience": 0.2,
+	"cookingtime": 200
+}

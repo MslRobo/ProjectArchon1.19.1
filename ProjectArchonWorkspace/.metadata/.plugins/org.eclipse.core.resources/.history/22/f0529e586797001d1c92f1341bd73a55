@@ -1,0 +1,6 @@
+{
+	"item.projectarchon.example_item": "Example Item",
+	"itemGroup.projectarchon": "Project Archon",
+	"block.projectarchon.example_block": "Example Block",
+	"block.projectarchon.rotatable_block": "Rotatable Block"
+}
