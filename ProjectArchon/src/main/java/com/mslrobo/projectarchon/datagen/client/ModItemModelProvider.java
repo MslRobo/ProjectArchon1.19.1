@@ -16,7 +16,6 @@ public class ModItemModelProvider extends ItemModelProvider{
 
 	public ModItemModelProvider(DataGenerator generator, ExistingFileHelper helper) {
 		super(generator, ProjectArchon.MOD_ID, helper);
-		// TODO Auto-generated constructor stub
 	}
 	
 	protected void simpleBlockItem(Item item) {
@@ -44,8 +43,8 @@ public class ModItemModelProvider extends ItemModelProvider{
 		simpleBlockItem(BlockInit.ROTATABLE_BLOCK.get().asItem());
 		
 		// Simple items
-		
 		oneLayerItem(ItemInit.EXAMPLE_ITEM.get());
+		oneLayerItem(ItemInit.ARCHON_CORE.get());
 	}
 
 }

@@ -124,4 +124,8 @@ public abstract class BaseLootTableProvider extends LootTableProvider {
             }
         });
     }
+    
+    public void add(Block block, LootTable.Builder builder) {
+    	lootTables.put(block, builder);
+    }
 }

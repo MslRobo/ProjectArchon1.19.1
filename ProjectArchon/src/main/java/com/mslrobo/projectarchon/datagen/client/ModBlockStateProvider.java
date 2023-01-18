@@ -11,7 +11,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
 	public ModBlockStateProvider(DataGenerator generator, ExistingFileHelper helper) {
 		super(generator, ProjectArchon.MOD_ID, helper);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

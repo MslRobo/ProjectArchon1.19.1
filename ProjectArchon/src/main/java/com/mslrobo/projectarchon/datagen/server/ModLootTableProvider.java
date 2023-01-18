@@ -5,6 +5,7 @@ import com.mslrobo.projectarchon.init.BlockInit;
 import com.mslrobo.projectarchon.init.ItemInit;
 
 import net.minecraft.data.DataGenerator;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -17,11 +18,15 @@ public class ModLootTableProvider extends BaseLootTableProvider{
 	@Override
 	protected void addTables() {
 		dropSelf(BlockInit.EXAMPLE_BLOCK.get());
-		createSilkTouchTable(ForgeRegistries.BLOCKS.getKey(BlockInit.ROTATABLE_BLOCK.get()).getPath(), 
-				BlockInit.ROTATABLE_BLOCK.get(), ItemInit.EXAMPLE_ITEM.get(), 1, 4);
+		silkTouch(BlockInit.ROTATABLE_BLOCK.get(), ItemInit.EXAMPLE_ITEM.get(), 1, 4);
+	}
+	
+	protected void silkTouch(Block block, Item silk, int min, int max) {
+		add(block, createSilkTouchTable(ForgeRegistries.BLOCKS.getKey(block).getPath(), 
+				block, silk, min, max));
 	}
 	
 	protected void dropSelf(Block block) {
-		createSimpleTable(ForgeRegistries.BLOCKS.getKey(BlockInit.EXAMPLE_BLOCK.get()).getPath(), BlockInit.EXAMPLE_BLOCK.get());
+		add(block, createSimpleTable(ForgeRegistries.BLOCKS.getKey(BlockInit.EXAMPLE_BLOCK.get()).getPath(), block));
 	}
 }

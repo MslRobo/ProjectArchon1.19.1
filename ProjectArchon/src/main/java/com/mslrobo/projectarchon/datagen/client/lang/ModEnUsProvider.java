@@ -11,7 +11,6 @@ public class ModEnUsProvider extends LanguageProvider{
 
 	public ModEnUsProvider(DataGenerator gen) {
 		super(gen, ProjectArchon.MOD_ID, "en_us");
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -21,9 +20,11 @@ public class ModEnUsProvider extends LanguageProvider{
 		
 		// Items
 		add(ItemInit.EXAMPLE_ITEM.get(), "Example Item");
+		add(ItemInit.ARCHON_CORE.get(), "Archon Core");
 			
 		// Blocks
 		add(BlockInit.EXAMPLE_BLOCK.get(), "Example Block");
+		add(BlockInit.ROTATABLE_BLOCK.get(), "Rotatable Block");
 	}
 	
 }

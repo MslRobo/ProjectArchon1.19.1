@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "a": {
+      "item": "projectarchon:example_block"
+    },
+    "b": {
+      "tag": "projectarchon:cool_items"
+    }
+  },
+  "pattern": [
+    "aba",
+    "bab",
+    "aba"
+  ],
+  "result": {
+    "item": "projectarchon:example_item"
+  }
+}

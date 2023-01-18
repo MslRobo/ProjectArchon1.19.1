@@ -22,17 +22,24 @@ public class ModRecipeProvider extends RecipeProvider{
 
 	public ModRecipeProvider(DataGenerator generator) {
 		super(generator);
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
 	protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
 		
 		// Shaped Recipe
-		ShapedRecipeBuilder.shaped(ItemInit.EXAMPLE_ITEM.get()).define('a', BlockInit.EXAMPLE_BLOCK.get().asItem())
-		.define('n', TagInit.Items.COOL_ITEMS)
+		ShapedRecipeBuilder.shaped(ItemInit.EXAMPLE_ITEM.get())
+		.define('a', BlockInit.EXAMPLE_BLOCK.get().asItem())
+		.define('b', TagInit.Items.COOL_ITEMS)
 		.pattern("aba").pattern("bab").pattern("aba")
+		.unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(BlockInit.EXAMPLE_BLOCK.get()).getPath(), has(BlockInit.EXAMPLE_BLOCK.get().asItem()))
 		.save(consumer, new ResourceLocation(ProjectArchon.MOD_ID, ForgeRegistries.ITEMS.getKey(ItemInit.EXAMPLE_ITEM.get()).getPath()));
+		
+		ShapedRecipeBuilder.shaped(BlockInit.EXAMPLE_BLOCK.get().asItem())
+		.define('n', ItemInit.EXAMPLE_ITEM.get().asItem())
+		.pattern("nnn").pattern("nnn").pattern("nnn")
+		.unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(ItemInit.EXAMPLE_ITEM.get()).getPath(), has(ItemInit.EXAMPLE_ITEM.get()))
+		.save(consumer, new ResourceLocation(ProjectArchon.MOD_ID, "blockrecipe"));
 		
 		// Shapeless Recipe
 		ShapelessRecipeBuilder.shapeless(BlockInit.EXAMPLE_BLOCK.get().asItem())
@@ -40,10 +47,12 @@ public class ModRecipeProvider extends RecipeProvider{
 		.requires(ItemInit.EXAMPLE_ITEM.get())
 		.requires(ItemInit.EXAMPLE_ITEM.get())
 		.requires(Items.DIAMOND)
+		.unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(ItemInit.EXAMPLE_ITEM.get()).getPath(), has(ItemInit.EXAMPLE_ITEM.get()))
 		.save(consumer, new ResourceLocation(ProjectArchon.MOD_ID, ForgeRegistries.BLOCKS.getKey(BlockInit.EXAMPLE_BLOCK.get()).getPath()));
 		
 		// Cookie Recipe
 		SimpleCookingRecipeBuilder.smelting(Ingredient.of(BlockInit.EXAMPLE_BLOCK.get().asItem()), BlockInit.ROTATABLE_BLOCK.get().asItem(), 1f, 200)
+		.unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(BlockInit.EXAMPLE_BLOCK.get()).getPath(), has(BlockInit.EXAMPLE_BLOCK.get().asItem()))
 		.save(consumer, new ResourceLocation(ProjectArchon.MOD_ID, ForgeRegistries.ITEMS.getKey(ItemInit.EXAMPLE_ITEM.get()).getPath() + "_smelting"));
 	}
 }
