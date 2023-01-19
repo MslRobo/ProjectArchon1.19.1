@@ -2,6 +2,7 @@
   "block.projectarchon.example_block": "Example Block",
   "block.projectarchon.rotatable_block": "Rotatable Block",
   "item.projectarchon.archon_core": "Archon Core",
+  "item.projectarchon.archon_sword": "Archon Sword",
   "item.projectarchon.example_item": "Example Item",
   "itemGroup.projectarchon": "Project Archon"
 }

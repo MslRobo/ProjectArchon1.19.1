@@ -1,8 +1,10 @@
-// 1.19.1	2023-01-18T22:11:17.3515145	Recipes
+// 1.19.1	2023-01-19T21:11:25.2904899	Recipes
+4fc4c599d7976f68543469a405d525d741caccdd data/projectarchon/advancements/recipes/projectarchon/archon_sword.json
 147107643f43e18d64319ec337990f34d9017f27 data/projectarchon/advancements/recipes/projectarchon/blockrecipe.json
 ee6698f8486e568d0a0976b0eee0bc2c2d225c05 data/projectarchon/advancements/recipes/projectarchon/example_block.json
 0f0329ffa410bc837c7705a217239a960ce57762 data/projectarchon/advancements/recipes/projectarchon/example_item.json
 be4ed412640c70402195c0f551cb8a038a9226cd data/projectarchon/advancements/recipes/projectarchon/example_item_smelting.json
+cca0a744646af7460a7b6eb1478ec468fe7d9be4 data/projectarchon/recipes/archon_sword.json
 2ea8ab67ca691af591dd9555e0f6d6cafd256131 data/projectarchon/recipes/blockrecipe.json
 d1eceecd4bd8f2605b6d8c6093e2d3860644d2a9 data/projectarchon/recipes/example_block.json
 9d907a3280f97abc15f07f461b92c36abb82872e data/projectarchon/recipes/example_item.json

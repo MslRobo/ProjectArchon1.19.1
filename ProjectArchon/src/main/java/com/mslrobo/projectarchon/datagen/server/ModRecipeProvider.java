@@ -35,6 +35,13 @@ public class ModRecipeProvider extends RecipeProvider{
 		.unlockedBy("has_" + ForgeRegistries.BLOCKS.getKey(BlockInit.EXAMPLE_BLOCK.get()).getPath(), has(BlockInit.EXAMPLE_BLOCK.get().asItem()))
 		.save(consumer, new ResourceLocation(ProjectArchon.MOD_ID, ForgeRegistries.ITEMS.getKey(ItemInit.EXAMPLE_ITEM.get()).getPath()));
 		
+		ShapedRecipeBuilder.shaped(ItemInit.ARCHON_SWORD.get())
+		.define('a', ItemInit.ARCHON_CORE.get().asItem())
+		.define('b', Items.STICK.asItem())
+		.pattern(" a ").pattern(" a ").pattern(" b ")
+		.unlockedBy("has_" + ForgeRegistries.ITEMS.getKey(ItemInit.ARCHON_CORE.get()).getPath(), has(ItemInit.ARCHON_CORE.get()))
+		.save(consumer, new ResourceLocation(ProjectArchon.MOD_ID, ForgeRegistries.ITEMS.getKey(ItemInit.ARCHON_SWORD.get()).getPath()));
+		
 		ShapedRecipeBuilder.shaped(BlockInit.EXAMPLE_BLOCK.get().asItem())
 		.define('n', ItemInit.EXAMPLE_ITEM.get().asItem())
 		.pattern("nnn").pattern("nnn").pattern("nnn")

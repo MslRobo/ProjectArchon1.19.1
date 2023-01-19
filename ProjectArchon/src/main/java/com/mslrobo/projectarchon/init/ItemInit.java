@@ -3,6 +3,7 @@ package com.mslrobo.projectarchon.init;
 import com.google.common.base.Supplier;
 import com.mslrobo.projectarchon.ProjectArchon;
 import com.mslrobo.projectarchon.item.ArchonCore;
+import com.mslrobo.projectarchon.item.ArchonSword;
 import com.mslrobo.projectarchon.item.ExampleItem;
 
 import net.minecraft.world.effect.MobEffectInstance;
@@ -26,4 +27,7 @@ public class ItemInit {
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
 		return ITEMS.register(name, item);
 	}
+	
+	public static final RegistryObject<Item> ARCHON_SWORD = register("archon_sword", () -> new ArchonSword( 
+			new Item.Properties().tab(ProjectArchon.PROJECT_ARCHON_TAB)));
 }

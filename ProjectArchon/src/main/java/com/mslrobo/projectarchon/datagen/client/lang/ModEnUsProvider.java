@@ -21,6 +21,7 @@ public class ModEnUsProvider extends LanguageProvider{
 		// Items
 		add(ItemInit.EXAMPLE_ITEM.get(), "Example Item");
 		add(ItemInit.ARCHON_CORE.get(), "Archon Core");
+		add(ItemInit.ARCHON_SWORD.get(), "Archon Sword");
 			
 		// Blocks
 		add(BlockInit.EXAMPLE_BLOCK.get(), "Example Block");
