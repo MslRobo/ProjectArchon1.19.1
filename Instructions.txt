@@ -1,0 +1,16 @@
+#Adding an item to the mod:
+#For code implementation see check existing modded items in the codebase
+1. Add a class to the item
+2. Add the item in the ItemInit class
+3. Put the items respective textures and models in their packages
+4. If the item has a custom model from blockbench remember to add the destination of the texture file in the model json file
+5. Run "runData.launch" to generate the automated files
+
+
+#Adding a block to the mod:
+#For code implementation see check existing modded blocks in the codebase
+1. Add a class to the item
+2. Add the item in the BlockInit class
+3. Put the items respective textures and models in their packages
+4. If the item has a custom model from blockbench remember to add the destination of the texture file in the model json file
+5. Run "runData.launch" to generate the automated files
