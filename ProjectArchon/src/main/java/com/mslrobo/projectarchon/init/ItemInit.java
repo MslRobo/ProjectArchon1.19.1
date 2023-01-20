@@ -3,6 +3,7 @@ package com.mslrobo.projectarchon.init;
 import com.google.common.base.Supplier;
 import com.mslrobo.projectarchon.ProjectArchon;
 import com.mslrobo.projectarchon.item.ArchonCore;
+import com.mslrobo.projectarchon.item.ArchonStaff;
 import com.mslrobo.projectarchon.item.ArchonSword;
 import com.mslrobo.projectarchon.item.ExampleItem;
 
@@ -29,5 +30,8 @@ public class ItemInit {
 	}
 	
 	public static final RegistryObject<Item> ARCHON_SWORD = register("archon_sword", () -> new ArchonSword( 
+			new Item.Properties().tab(ProjectArchon.PROJECT_ARCHON_TAB)));
+	
+	public static final RegistryObject<Item> ARCHON_STAFF = register("archon_staff", () -> new ArchonStaff( 
 			new Item.Properties().tab(ProjectArchon.PROJECT_ARCHON_TAB)));
 }
