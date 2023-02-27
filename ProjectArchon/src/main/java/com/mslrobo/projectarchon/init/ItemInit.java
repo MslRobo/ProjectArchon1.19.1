@@ -11,6 +11,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -34,4 +35,12 @@ public class ItemInit {
 	
 	public static final RegistryObject<Item> ARCHON_STAFF = register("archon_staff", () -> new ArchonStaff( 
 			new Item.Properties().tab(ProjectArchon.PROJECT_ARCHON_TAB)));
+	
+	public static final RegistryObject<Item> BLUEBERRY_SEEDS = register("blueberry_seeds", 
+			() -> new ItemNameBlockItem(BlockInit.BLUEBERRY_CROP.get(),
+					new Item.Properties().tab(ProjectArchon.PROJECT_ARCHON_TAB)));
+
+	public static final RegistryObject<Item> BLUEBERRY = ITEMS.register("blueberry", 
+			() -> new Item(new Item.Properties().tab(ProjectArchon.PROJECT_ARCHON_TAB)
+					.food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())));
 }

@@ -18,5 +18,6 @@ public class ClientEventBusSubscriber {
 	@SubscribeEvent
 	public static void clientSetup(FMLClientSetupEvent event) {
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.ROTATABLE_BLOCK.get(), RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(BlockInit.BLUEBERRY_CROP.get(), RenderType.cutout());
 	}
 }

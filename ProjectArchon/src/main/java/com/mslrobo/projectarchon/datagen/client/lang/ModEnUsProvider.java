@@ -23,10 +23,13 @@ public class ModEnUsProvider extends LanguageProvider{
 		add(ItemInit.ARCHON_CORE.get(), "Archon Core");
 		add(ItemInit.ARCHON_SWORD.get(), "Archon Sword");
 		add(ItemInit.ARCHON_STAFF.get(), "Archon Staff");
+		add(ItemInit.BLUEBERRY.get(), "Blueberry");
+		add(ItemInit.BLUEBERRY_SEEDS.get(), "Blueberry Seeds");
 			
 		// Blocks
 		add(BlockInit.EXAMPLE_BLOCK.get(), "Example Block");
 		add(BlockInit.ROTATABLE_BLOCK.get(), "Rotatable Block");
+		add(BlockInit.BLUEBERRY_CROP.get(), "Blueberry Crop");
 	}
 	
 }

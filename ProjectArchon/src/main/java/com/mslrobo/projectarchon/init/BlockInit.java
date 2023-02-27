@@ -4,6 +4,7 @@ import java.util.function.Function;
 
 import com.google.common.base.Supplier;
 import com.mslrobo.projectarchon.ProjectArchon;
+import com.mslrobo.projectarchon.block.BlueberryCropBlock;
 import com.mslrobo.projectarchon.block.ExampleBlock;
 import com.mslrobo.projectarchon.block.RotatableBlock;
 
@@ -32,6 +33,9 @@ public class BlockInit {
 	public static final RegistryObject<Block> ROTATABLE_BLOCK = register("rotatable_block", 
 			() -> new RotatableBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).dynamicShape().sound(SoundType.STONE)), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ProjectArchon.PROJECT_ARCHON_TAB)));
+	
+	public static final RegistryObject<Block> BLUEBERRY_CROP = BLOCKS.register("blueberry_crop", 
+			() -> new BlueberryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block) {
 		return BLOCKS.register(name, block);
